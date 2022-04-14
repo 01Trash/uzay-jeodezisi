@@ -1,2 +1,1 @@
-# uzay-jeodezisi
-Uzay Jeodezisi 1. Ödev
+# Uzay Jeodezisi 1. Ödev
