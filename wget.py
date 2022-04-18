@@ -47,4 +47,4 @@ urls = [
 
 for i in urls:
     filename = wget.download(i)
-    print(filename)
+    #print(filename)
