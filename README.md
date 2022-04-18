@@ -1,3 +1,3 @@
 # Uzay Jeodezisi 1. Ödev
 
-[GNSS Calendars](https://orhankurt.jimdofree.com/software-products/gnss-calendars/)
+GNSS Takvimi => [GNSS Calendars](https://orhankurt.jimdofree.com/software-products/gnss-calendars/)
