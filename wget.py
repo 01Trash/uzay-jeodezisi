@@ -1,0 +1,50 @@
+import wget
+
+urls = [
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22059/final/Sta21991.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22060/final/Sta21992.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22061/final/Sta21993.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22062/final/Sta21994.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22063/final/Sta21995.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22064/final/Sta21996.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22065/final/Sta22000.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22066/final/Sta22001.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22067/final/Sta22002.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22068/final/Sta22003.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22069/final/Sta22004.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22070/final/Sta22005.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22071/final/Sta22006.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22072/final/Sta22010.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22073/final/Sta22011.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22074/final/Sta22012.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22075/final/Sta22013.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22076/final/Sta22014.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22077/final/Sta22015.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22078/final/Sta22016.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22079/final/Sta22020.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22080/final/Sta22021.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22081/final/Sta22022.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22082/final/Sta22023.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22083/final/Sta22024.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22084/final/Sta22025.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22085/final/Sta22026.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22086/final/Sta22030.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22087/final/Sta22031.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22088/final/Sta22032.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22089/final/Sta22033.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22090/final/Sta22034.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22091/final/Sta22035.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22092/final/Sta22036.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22093/final/Sta22040.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22094/final/Sta22041.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22095/final/Sta22042.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22096/final/Sta22043.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22097/final/Sta22044.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22098/final/Sta22045.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22099/final/Sta22046.sp3',
+'ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/22100/final/Sta22050.sp3'
+]
+
+for i in urls:
+    filename = wget.download(i)
+    print(filename)
