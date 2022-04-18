@@ -4,6 +4,8 @@
 
 GNSS Takvimi => [GNSS Calendars](https://orhankurt.jimdofree.com/software-products/gnss-calendars/)
 
+GPS Yuma Almanacs 2022 => [GPS Yuma Almanacs 2022](https://www.celestrak.com/GPS/almanac/Yuma/2022/)
+
 SP3_Work.zip => [SP3_Work.zip](https://drive.google.com/file/d/1eNygUN-YTQiqysdUDcUrsFwKhRwYtB4R/view)
 
 
