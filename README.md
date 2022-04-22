@@ -10,5 +10,7 @@ SP3_Work.zip => [SP3_Work.zip](https://drive.google.com/file/d/1eNygUN-YTQiqysdU
 
 
 1) [ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/](ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/)
+2) [ ftp://ftp.glonass-iac.ru/MCC/BRDC/]( ftp://ftp.glonass-iac.ru/MCC/BRDC/)
+3) 
 
-2)
+
