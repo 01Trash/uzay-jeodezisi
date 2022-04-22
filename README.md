@@ -1,5 +1,7 @@
 # Uzay Jeodezisi 1. Ödev
 
+## [https://orhankurt.jimdofree.com/undergraduate/spring-bahar/hrt434-space-geodesy/](https://orhankurt.jimdofree.com/undergraduate/spring-bahar/hrt434-space-geodesy/)
+
 2021-2022 Uzay Jeodezisi Ödev 1 => [Space Geodesy Homework](https://drive.google.com/file/d/17rGmm6efs70VvQjzjc2MY-oz84LC5A3m/view)
 
 1) [ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/](ftp://ftp.glonass-iac.ru/MCC/PRODUCTS/)
