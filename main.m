@@ -170,7 +170,7 @@ for k = 1:m;
 
 end;
 
-time = 0;
+time = time;
 j = 1;
 [m,n] = size(data_source);
 for j = 1:m;
@@ -186,7 +186,7 @@ for j = 1:m;
     time = time + 900;
 
 end;
-
+%csvwrite("veri.xlsx", rpre_ryuma);
 
 
 
