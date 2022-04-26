@@ -68,6 +68,9 @@ while (t <= time + 86400)
     Ek = Mk + e * sin(Ek);
     Ek = Mk + e * sin(Ek);
     Ek = Mk + e * sin(Ek);
+    Ek = Mk + e * sin(Ek);
+    Ek = Mk + e * sin(Ek);
+    Ek = Mk + e * sin(Ek);
     Ek_grad = Ek * 200 / pi;
 
     pay = sqrt(1-e*e) * sin(Ek);
