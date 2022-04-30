@@ -11,7 +11,7 @@ We = 7292115.1467E-11;
 
 
 %%% Verileri çek
-filename = 'broadcast.ods';
+filename = 'broadcast_12.ods';
 data_source = xlsread(filename);
 
 
@@ -175,7 +175,7 @@ end;
 
 
 %%% Verileri çek
-filename = 'erdem.ods';
+filename = 'erdem_12.ods';
 data_source = xlsread(filename);
 
 k = 1;
