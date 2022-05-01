@@ -192,6 +192,26 @@ end;
 %csvwrite("veri.xlsx", rpre_ryuma);
 
 
+[m,n] = size(data_source);
+for j = 1:m;
 
+    x(j,1) = 1000*(rpre_ryuma(j,2));
+    y(j,1) = 1000*(rpre_ryuma(j,3));
+    z(j,1) = 1000*(rpre_ryuma(j,4));
+    t(j,1) = 1000*(rpre_ryuma(j,5));
+
+    j = j + 1;
+
+end;
+
+hold on;
+plot(x);
+hold on;
+plot(y);
+hold on;
+plot(z);
+hold on;
+plot(t);
+hold off;
 
 
