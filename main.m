@@ -195,23 +195,36 @@ end;
 [m,n] = size(data_source);
 for j = 1:m;
 
-    x(j,1) = 1000*(rpre_ryuma(j,2));
-    y(j,1) = 1000*(rpre_ryuma(j,3));
-    z(j,1) = 1000*(rpre_ryuma(j,4));
-    t(j,1) = 1000*(rpre_ryuma(j,5));
+    x(j,1) = (rpre_ryuma(j,2));
+    y(j,1) = (rpre_ryuma(j,3));
+    z(j,1) = (rpre_ryuma(j,4));
+    t(j,1) = (rpre_ryuma(j,5));
+
+    abc(j,1) = rpre_ryuma(j,1);
 
     j = j + 1;
 
 end;
 
+
 hold on;
-plot(x);
+plot(abc, x);
 hold on;
-plot(y);
+plot(abc, y);
 hold on;
-plot(z);
+plot(abc, z);
 hold on;
-plot(t);
+plot(abc, t);
 hold off;
+##grid on;
+
+
+set (gca, "xaxislocation", "origin");
+set (gca, "yaxislocation", "left");
+
+##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
+legend({'x', 'y', 'z', 't'});
+title('Precise - Yuma');
+
 
 

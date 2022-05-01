@@ -242,10 +242,6 @@ hold off;
 ##grid on;
 
 
-##ax = gca ();
-##set (ax, "position", [0.5, 0.5, 0.5, 0.5]);
-
-
 set (gca, "xaxislocation", "origin");
 set (gca, "yaxislocation", "left");
 

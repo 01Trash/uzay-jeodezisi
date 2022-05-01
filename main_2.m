@@ -175,7 +175,7 @@ end;
 
 
 %%% Verileri çek
-filename = 'erdem_12.ods';
+filename = 'erdem.ods';
 data_source = xlsread(filename);
 
 k = 1;
@@ -215,5 +215,37 @@ end;
 %csvwrite("veri.xlsx", rpre_ryuma);
 
 
+[m,n] = size(data_source);
+for j = 1:m;
 
+    x(j,1) = (rpre_rbro(j,2));
+    y(j,1) = (rpre_rbro(j,3));
+    z(j,1) = (rpre_rbro(j,4));
+    t(j,1) = (rpre_rbro(j,5));
+
+    abc(j,1) = rpre_rbro(j,1);
+
+    j = j + 1;
+
+end;
+
+
+hold on;
+plot(abc, x);
+hold on;
+plot(abc, y);
+hold on;
+plot(abc, z);
+hold on;
+plot(abc, t);
+hold off;
+##grid on;
+
+
+set (gca, "xaxislocation", "origin");
+set (gca, "yaxislocation", "left");
+
+##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
+legend({'x', 'y', 'z', 't'});
+title('Precise - Brodcast');
 
