@@ -216,7 +216,7 @@ plot(abc, z);
 hold on;
 plot(abc, t);
 hold off;
-##grid on;
+grid on;
 
 
 set (gca, "xaxislocation", "origin");
