@@ -183,6 +183,7 @@ for j = 1:m;
     rpre_ryuma(j,3) = rpre(j,2) - ryuma(j,2);
     rpre_ryuma(j,4) = rpre(j,3) - ryuma(j,3);
     rpre_ryuma(j,5) = rpre(j,4) - ryuma(j,4);
+    rpre_ryuma(j,6) = sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(ryuma(j,1)*ryuma(j,1) + ryuma(j,2)*ryuma(j,2) + ryuma(j,3)*ryuma(j,3));
 
 
     j = j + 1;
@@ -198,6 +199,7 @@ for j = 1:m;
     x(j,1) = (rpre_ryuma(j,2));
     y(j,1) = (rpre_ryuma(j,3));
     z(j,1) = (rpre_ryuma(j,4));
+    s(j,1) = (rpre_ryuma(j,6));
     t(j,1) = (rpre_ryuma(j,5));
 
     abc(j,1) = rpre_ryuma(j,1);
@@ -214,6 +216,8 @@ plot(abc, y);
 hold on;
 plot(abc, z);
 hold on;
+plot(abc, s);
+hold on;
 plot(abc, t);
 hold off;
 grid on;
@@ -223,7 +227,7 @@ set (gca, "xaxislocation", "origin");
 set (gca, "yaxislocation", "left");
 
 ##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
-legend({'x', 'y', 'z', 't'});
+legend({'x', 'y', 'z', 's', 't'});
 title('Precise - Yuma');
 
 
