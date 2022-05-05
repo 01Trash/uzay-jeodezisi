@@ -202,11 +202,11 @@ j = 1;
 for j = 1:m;
 
     rpre_rbro(j,1) = time;
-    rpre_rbro(j,2) = (rpre(j,1) - rbro(j,1))/1000;
-    rpre_rbro(j,3) = (rpre(j,2) - rbro(j,2))/1000;
-    rpre_rbro(j,4) = (rpre(j,3) - rbro(j,3))/1000;
+    rpre_rbro(j,2) = (rpre(j,1) - rbro(j,1))*1000;
+    rpre_rbro(j,3) = (rpre(j,2) - rbro(j,2))*1000;
+    rpre_rbro(j,4) = (rpre(j,3) - rbro(j,3))*1000;
     rpre_rbro(j,5) = (rpre(j,4) - rbro(j,4));
-    rpre_rbro(j,6) = (sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(rbro(j,1)*rbro(j,1) + rbro(j,2)*rbro(j,2) + rbro(j,3)*rbro(j,3)));
+    rpre_rbro(j,6) = (sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(rbro(j,1)*rbro(j,1) + rbro(j,2)*rbro(j,2) + rbro(j,3)*rbro(j,3)))*1000;
 
 
     j = j + 1;
