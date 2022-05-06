@@ -202,7 +202,7 @@ for j = 1:m;
     z(j,1) = (rpre_ryuma(j,4));
     s(j,1) = (rpre_ryuma(j,6));
     %% HATALI KULLANIM DOĞRU BULUNCA DÜZELT!!!
-    t(j,1) = (rpre_ryuma(j,5))*7;
+    t(j,1) = (rpre_ryuma(j,5));
 
     abc(j,1) = rpre_ryuma(j,1);
 
