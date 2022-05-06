@@ -211,7 +211,7 @@ for j = 1:m;
 
 
     j = j + 1;
-    time = time + 900;
+    time = time + 0.25;
 
 end;
 %csvwrite("veri.xlsx", rpre_ryuma);
@@ -224,6 +224,7 @@ for j = 1:m;
     y(j,1) = (rpre_rbro(j,3));
     z(j,1) = (rpre_rbro(j,4));
     s(j,1) = (rpre_rbro(j,6));
+    %% HATALI KULLANIM DOĞRU BULUNCA DÜZELT!!!
     t(j,1) = (rpre_rbro(j,5));
 
     abc(j,1) = rpre_rbro(j,1);
@@ -247,12 +248,18 @@ hold off;
 grid on;
 
 
-set (gca, "xaxislocation", "origin");
+set(gca, 'xtick', 0:2:24);
+##set(gca, 'ytick', -2:0.2:2);
+
+legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
+title('PRECISE - BROADCAST_0_2_h');
+
+set (gca, "xaxislocation", "left");
 set (gca, "yaxislocation", "left");
 
 ##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
-legend({'x', 'y', 'z', 's', 't'});
-title('Precise - Brodcast');
+##legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
+##title('PRECISE - BROADCAST');
 
 
 

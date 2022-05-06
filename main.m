@@ -173,7 +173,7 @@ for k = 1:m;
 
 end;
 
-time = time;
+time = 0;
 j = 1;
 [m,n] = size(data_source);
 for j = 1:m;
@@ -187,10 +187,11 @@ for j = 1:m;
 
 
     j = j + 1;
-    time = time + 900;
+    time = time + 0.25;
 
 end;
 %csvwrite("veri.xlsx", rpre_ryuma);
+
 
 
 [m,n] = size(data_source);
@@ -200,7 +201,8 @@ for j = 1:m;
     y(j,1) = (rpre_ryuma(j,3));
     z(j,1) = (rpre_ryuma(j,4));
     s(j,1) = (rpre_ryuma(j,6));
-    t(j,1) = (rpre_ryuma(j,5));
+    %% HATALI KULLANIM DOĞRU BULUNCA DÜZELT!!!
+    t(j,1) = (rpre_ryuma(j,5))*7;
 
     abc(j,1) = rpre_ryuma(j,1);
 
@@ -222,13 +224,17 @@ plot(abc, t);
 hold off;
 grid on;
 
+set(gca, 'xtick', 0:2:24);
 
-set (gca, "xaxislocation", "origin");
+legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
+title('PRECISE - ALMANAC_Y_U_M_A');
+
+set (gca, "xaxislocation", "left");
 set (gca, "yaxislocation", "left");
 
 ##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
-legend({'x', 'y', 'z', 's', 't'});
-title('Precise - Yuma');
+##legend({'x', 'y', 'z', 's', 't'});
+##title('PRECISE - ALMANAC(Yuma)');
 
 
 
