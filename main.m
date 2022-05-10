@@ -229,7 +229,7 @@ set(gca, 'xtick', 0:2:24);
 legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
 title('PRECISE - ALMANAC_Y_U_M_A');
 
-set (gca, "xaxislocation", "left");
+##set (gca, "xaxislocation", "left");
 set (gca, "yaxislocation", "left");
 
 ##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
