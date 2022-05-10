@@ -225,7 +225,9 @@ for j = 1:m;
     z(j,1) = (rpre_rbro(j,4));
     s(j,1) = (rpre_rbro(j,6));
     %% HATALI KULLANIM DOĞRU BULUNCA DÜZELT!!!
+##    t(j,1) = (rpre_ryuma(j,5))*1000;
     t(j,1) = (rpre_rbro(j,5));
+##    t(j,1)
 
     abc(j,1) = rpre_rbro(j,1);
 
