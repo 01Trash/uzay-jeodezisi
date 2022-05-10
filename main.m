@@ -227,16 +227,16 @@ hold off;
 grid on;
 
 set(gca, 'xtick', 0:2:24);
+##set(gca, 'y2ticks', 0:10:1000);
+##set(gca, 'ytick', 0:10:1000);
+##y2label
+##x1y2
 
 legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
 title('PRECISE - ALMANAC_Y_U_M_A');
 
 ##set (gca, "xaxislocation", "left");
 set (gca, "yaxislocation", "left");
-
-##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
-##legend({'x', 'y', 'z', 's', 't'});
-##title('PRECISE - ALMANAC(Yuma)');
 
 
 
