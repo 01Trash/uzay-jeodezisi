@@ -182,8 +182,8 @@ for j = 1:m;
     rpre_ryuma(j,2) = rpre(j,1) - ryuma(j,1);
     rpre_ryuma(j,3) = rpre(j,2) - ryuma(j,2);
     rpre_ryuma(j,4) = rpre(j,3) - ryuma(j,3);
-    rpre_ryuma(j,5) = rpre(j,4) - ryuma(j,4);
-    rpre_ryuma(j,6) = sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(ryuma(j,1)*ryuma(j,1) + ryuma(j,2)*ryuma(j,2) + ryuma(j,3)*ryuma(j,3));
+    rpre_ryuma(j,6) = (rpre(j,4) - ryuma(j,4))*1000;
+    rpre_ryuma(j,5) = sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(ryuma(j,1)*ryuma(j,1) + ryuma(j,2)*ryuma(j,2) + ryuma(j,3)*ryuma(j,3));
 
 
     j = j + 1;
@@ -200,10 +200,10 @@ for j = 1:m;
     x(j,1) = (rpre_ryuma(j,2));
     y(j,1) = (rpre_ryuma(j,3));
     z(j,1) = (rpre_ryuma(j,4));
-    s(j,1) = (rpre_ryuma(j,6));
+    s(j,1) = (rpre_ryuma(j,5));
     %% HATALI KULLANIM DOĞRU BULUNCA DÜZELT!!!
 ##    t(j,1) = (rpre_ryuma(j,5))*1000;
-    t(j,1) = (rpre_ryuma(j,5));
+    t(j,1) = (rpre_ryuma(j,6));
 ##    t(j,1)
 
     abc(j,1) = rpre_ryuma(j,1);
@@ -211,6 +211,12 @@ for j = 1:m;
     j = j + 1;
 
 end;
+
+%%% M dosyasını dosyaya yazdır
+%M
+%xlswrite('abc.xlsx', M);
+csvwrite('figure_1.csv', rpre_ryuma);
+
 
 
 hold on;
@@ -222,21 +228,23 @@ plot(abc, z);
 hold on;
 plot(abc, s);
 hold on;
-plot(abc, t);
+##plot(abc, t);
 hold off;
 grid on;
 
 set(gca, 'xtick', 0:2:24);
-##set(gca, 'y2ticks', 0:10:1000);
-##set(gca, 'ytick', 0:10:1000);
-##y2label
-##x1y2
+####set(gca, 'y2ticks', 0:10:1000);
+####set(gca, 'ytick', 0:10:1000);
+####y2label
+####x1y2
 
 legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
 title('PRECISE - ALMANAC_Y_U_M_A');
 
-##set (gca, "xaxislocation", "left");
+####set (gca, "xaxislocation", "left");
 set (gca, "yaxislocation", "left");
+
+
 
 
 

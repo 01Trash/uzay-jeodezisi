@@ -205,8 +205,8 @@ for j = 1:m;
     rpre_rbro(j,2) = (rpre(j,1) - rbro(j,1))*1000;
     rpre_rbro(j,3) = (rpre(j,2) - rbro(j,2))*1000;
     rpre_rbro(j,4) = (rpre(j,3) - rbro(j,3))*1000;
-    rpre_rbro(j,5) = (rpre(j,4) - rbro(j,4));
-    rpre_rbro(j,6) = (sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(rbro(j,1)*rbro(j,1) + rbro(j,2)*rbro(j,2) + rbro(j,3)*rbro(j,3)))*1000;
+    rpre_rbro(j,6) = (rpre(j,4) - rbro(j,4))*1000;
+    rpre_rbro(j,5) = (sqrt(rpre(j,1)*rpre(j,1) + rpre(j,2)*rpre(j,2) + rpre(j,3)*rpre(j,3)) - sqrt(rbro(j,1)*rbro(j,1) + rbro(j,2)*rbro(j,2) + rbro(j,3)*rbro(j,3)))*1000;
 
 
 
@@ -223,10 +223,10 @@ for j = 1:m;
     x(j,1) = (rpre_rbro(j,2));
     y(j,1) = (rpre_rbro(j,3));
     z(j,1) = (rpre_rbro(j,4));
-    s(j,1) = (rpre_rbro(j,6));
+    s(j,1) = (rpre_rbro(j,5));
     %% HATALI KULLANIM DOĞRU BULUNCA DÜZELT!!!
 ##    t(j,1) = (rpre_ryuma(j,5))*1000;
-    t(j,1) = (rpre_rbro(j,5));
+    t(j,1) = (rpre_rbro(j,6));
 ##    t(j,1)
 
     abc(j,1) = rpre_rbro(j,1);
@@ -234,6 +234,12 @@ for j = 1:m;
     j = j + 1;
 
 end;
+%%% M dosyasını dosyaya yazdır
+%M
+%xlswrite('abc.xlsx', M);
+csvwrite('figure-2.csv', rpre_rbro);
+
+
 
 
 hold on;
