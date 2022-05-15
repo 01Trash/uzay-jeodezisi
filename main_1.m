@@ -237,7 +237,7 @@ end;
 %%% M dosyasını dosyaya yazdır
 %M
 %xlswrite('abc.xlsx', M);
-csvwrite('figure-2.csv', rpre_rbro);
+##csvwrite('figure-2.csv', rpre_rbro);
 
 
 

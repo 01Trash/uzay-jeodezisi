@@ -215,7 +215,7 @@ end;
 %%% M dosyasını dosyaya yazdır
 %M
 %xlswrite('abc.xlsx', M);
-csvwrite('figure_1.csv', rpre_ryuma);
+##csvwrite('figure_1.csv', rpre_ryuma);
 
 
 
