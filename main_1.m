@@ -2,7 +2,7 @@ clc, clear
 pkg load io
 
 % Pazar günü = 0
-gun = 0;
+gun = ;
 
 %%% Yerçekimi sabiti m^3/s^2
 GM = 3.986005E+14;

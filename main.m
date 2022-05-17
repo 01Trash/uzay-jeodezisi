@@ -3,39 +3,39 @@ pkg load io
 
 %%% YUMA Yörünge Formatı %%%
 %%% Uydu numarası
-ID = 3;
+ID = ;
 %%% 0: Çalışıyor
-Healt = 0;
+Healt = ;
 %%% Eccentricity | e []
-Eccentricity = 0.4000186920E-002;
+Eccentricity = ;
 %%% Time of Applicability (s) | t0 [s] (Yörünge ve saat referans anı)
-Time_of_Applicability = 61440.0000;
+Time_of_Applicability = ;
 %%% Orbital Inclination (rad) | i0 [rad]
-Orbital_Inclination = 0.9727739166;
+Orbital_Inclination = ;
 %%% Rate of Right Ascen (r/s) | Δl [rad/s]
-Rate_of_Right_Ascen = -0.7874613724E-008;
+Rate_of_Right_Ascen = ;
 %%% SQRT (A) (m 1/2) | a^0.5 [m^0.5]
-SQRT = 5153.595703;
+SQRT = ;
 %%% Right Ascen at Week (rad) | l0 [rad]
-Right_Ascen_at_Week = -0.1751662249E+001;
+Right_Ascen_at_Week = ;
 %%% Argument of Perigee (rad) | w0 [rad]
-Argument_of_Perigee = 0.942627824;
+Argument_of_Perigee = ;
 %%% Mean Anom (rad) | M0 [rad]
-Mean_Anom = -0.2069800727E+001;
+Mean_Anom = ;
 %%% Af0 (s) | a0 [s]
-Af0 = -0.1916885376E-003;
+Af0 = ;
 %%% Af1 (s/s) | a1 []
-Af1 = -0.1455191523E-010;
+Af1 = ;
 %%% week | Değiştirilmiş GPS Haftası
 %%% 2048 eklenecek
-week = 156;
+week = ;
 
 %%% Yerçekimi sabiti m^3/s^2
 GM = 3.986005E+14;
 %%% Yerin açısal dönme hızı rad/s
 We = 7292115.1467E-11;
 %%% t [s]
-t = 0.0;
+t = ;
 
 time = t;
 i = 1;
