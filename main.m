@@ -152,7 +152,7 @@ end
 %csvwrite("veri.xlsx", M)
 
 %%% Verileri çek
-filename = 'erdem.ods';
+filename = 'xyz.ods';
 data_source = xlsread(filename);
 
 k = 1;
@@ -215,34 +215,34 @@ end;
 %%% M dosyasını dosyaya yazdır
 %M
 %xlswrite('abc.xlsx', M);
-##csvwrite('figure_1.csv', rpre_ryuma);
+csvwrite('figure_1.csv', rpre_ryuma);
 
 
 
-hold on;
-plot(abc, x);
-hold on;
-plot(abc, y);
-hold on;
-plot(abc, z);
-hold on;
-plot(abc, s);
-hold on;
-##plot(abc, t);
-hold off;
-grid on;
-
-set(gca, 'xtick', 0:2:24);
-####set(gca, 'y2ticks', 0:10:1000);
-####set(gca, 'ytick', 0:10:1000);
-####y2label
-####x1y2
-
-legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
-title('PRECISE - ALMANAC_Y_U_M_A');
-
-####set (gca, "xaxislocation", "left");
-set (gca, "yaxislocation", "left");
+##hold on;
+##plot(abc, x);
+##hold on;
+##plot(abc, y);
+##hold on;
+##plot(abc, z);
+##hold on;
+##plot(abc, s);
+##hold on;
+####plot(abc, t);
+##hold off;
+##grid on;
+##
+##set(gca, 'xtick', 0:2:24);
+######set(gca, 'y2ticks', 0:10:1000);
+######set(gca, 'ytick', 0:10:1000);
+######y2label
+######x1y2
+##
+##legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
+##title('PRECISE - ALMANAC_Y_U_M_A');
+##
+######set (gca, "xaxislocation", "left");
+##set (gca, "yaxislocation", "left");
 
 
 

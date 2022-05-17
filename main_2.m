@@ -175,7 +175,7 @@ end;
 
 
 %%% Verileri çek
-filename = 'erdem.ods';
+filename = 'xyz.ods';
 data_source = xlsread(filename);
 
 k = 1;
@@ -236,36 +236,36 @@ end;
 %%% M dosyasını dosyaya yazdır
 %M
 %xlswrite('abc.xlsx', M);
-##csvwrite('figure-3.csv', rpre_rbro);
+csvwrite('figure-3.csv', rpre_rbro);
 
 
 
-
-hold on;
-plot(abc, x);
-hold on;
-plot(abc, y);
-hold on;
-plot(abc, z);
-hold on;
-plot(abc, s);
-hold on;
-plot(abc, t);
-hold off;
-grid on;
-
-
-set(gca, 'xtick', 0:2:24);
-
-legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
-title('PRECISE - BROADCAST_1_2_h');
-
-set (gca, "xaxislocation", "left");
-set (gca, "yaxislocation", "left");
-
-##legend({'x', 'y', 'z', 't'}, 'Location', 'north');
+##
+##hold on;
+##plot(abc, x);
+##hold on;
+##plot(abc, y);
+##hold on;
+##plot(abc, z);
+##hold on;
+##plot(abc, s);
+##hold on;
+##plot(abc, t);
+##hold off;
+##grid on;
+##
+##
+##set(gca, 'xtick', 0:2:24);
+##
 ##legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
-##title('PRECISE - BROADCAST_12h');
+##title('PRECISE - BROADCAST_1_2_h');
+##
+##set (gca, "xaxislocation", "left");
+##set (gca, "yaxislocation", "left");
+##
+####legend({'x', 'y', 'z', 't'}, 'Location', 'north');
+####legend({'Vx', 'Vy', 'Vz', 'Vs', 'Vt'});
+####title('PRECISE - BROADCAST_12h');
 
 
 
